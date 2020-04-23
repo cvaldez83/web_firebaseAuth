@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <%- include('../partials/head.ejs') %>
+    <title>t4c login</title>
+
+
+
+  </head>
+  <body>
+    <div class="login-page">
+        <div class="form">
+          <input id="txtEmail" type="text" placeholder="Email" name="username" />
+          <input id="txtPassword" type="password" placeholder="Password" name="password"/>
+          <button id="btnLogin">Login</button>
+          </form>
+        </div>
+    </div>
+    <!-- axios  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script type='module' src='/scripts/firebaseInit.js'></script>
+    <script type='module' src='/scripts/firebaseLogin.js'></script>
+    <script type='module' src='/scripts/firebaseAuthStateChange.js'></script>
+    <!-- <script defer></script> -->
+  </body>
+</html>
